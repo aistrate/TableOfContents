@@ -12,12 +12,12 @@ namespace TableOfContents
                     new TocSource
                     {
                         FilePath = @"C:\Users\Adrian\Documents\My Dropbox\Job\Job Leads\4_Silk\RegexParser\ImplementedRegexFeatures.md",
-                        Url = @"Doc/ImplementedRegexFeatures.md",
+                        Url = @"/Doc/ImplementedRegexFeatures.md",
                     },
                     new TocSource
                     {
                         FilePath = @"C:\Users\Adrian\Documents\My Dropbox\Job\Job Leads\4_Silk\RegexParser\HowRegexParserWorks.md",
-                        Url = @"Doc/HowRegexParserWorks.md",
+                        Url = @"/Doc/HowRegexParserWorks.md",
                     },
                 },
                 Destination = @"C:\Users\Adrian\Documents\My Dropbox\Job\Job Leads\4_Silk\RegexParser\README.md",
