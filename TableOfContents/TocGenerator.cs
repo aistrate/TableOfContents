@@ -32,13 +32,14 @@ namespace TableOfContents
                             {
                                 TocHeading heading = new TocHeading
                                 {
-                                    IndentLevel = match.Groups[1].Length,
+                                    IndentLevel = match.Groups[1].Length - source.MinIndentLevel + 1,
                                     Text = match.Groups[2].Value,
                                     Url = source.Url,
                                     HashTag = generateHashTag(match.Groups[2].Value),
                                 };
 
-                                headings.Add(heading);
+                                if (heading.IndentLevel >= 1)
+                                    headings.Add(heading);
                             }
                         }
                     }
